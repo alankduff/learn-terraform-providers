@@ -2,6 +2,8 @@ provider "azurerm" {
   features {}
 }
 
+provider "random" { }
+
 resource "azurerm_resource_group" "example" {
   name     = "terraform-provider-example"
   location = "West US 2"
